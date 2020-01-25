@@ -7,7 +7,20 @@ $(document).ready(function () {
     centerMode: true,
     autoplay: true,
     autoplaySpeed: 1500,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    responsive: [{
+      breakpoint: 796,
+      settings: {
+          slidesToShow: 2,
+      }
+  },
+  {
+      breakpoint: 500,
+      settings: {
+          slidesToShow: 1
+      }
+  }
+]
   });
   $('.left-arr').click(function() {
     $('.slider').slick('slickPrev');

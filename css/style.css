@@ -23,7 +23,7 @@ body {
 .title {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 86px;
+  font-size: 76px;
   line-height: 90px;
   text-align: center;
   margin: 10px auto 0;
@@ -41,7 +41,7 @@ body {
   position: relative;
 }
 .slider {
-  margin: 105px 0 130px 140px;
+  margin: 65px 0 130px 140px;
 }
 .left-arr {
   position: absolute;
@@ -52,6 +52,9 @@ body {
   max-height: 100px;
 }
 .left-arr img {
+  width: 100%;
+}
+.right-arr img {
   width: 100%;
 }
 
@@ -112,4 +115,62 @@ body {
 }
 .slider__item:hover .hover-slide {
   opacity: 0.85;
+}
+
+@media screen and (max-width: 991px) {
+  .left-arr {
+    width: 80px;
+    height: 80px;
+    top: 25%;
+  }
+  .right-arr {
+    width: 80px;
+    height: 80px;
+    top: 25%;
+  }
+}
+@media screen and (max-width: 796px) {
+  .left-arr {
+    width: 70px;
+    height: 70px;
+    top: 25%;
+  }
+  .right-arr {
+    width: 70px;
+    height: 70px;
+    top: 25%;
+  }
+  .title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .thriangle {
+    position: absolute;
+    top: 155px;
+    left: 60px;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  .left-arr {
+    width: 40px;
+    height: 40px;
+    top: 30%;
+  }
+  .right-arr {
+    width: 40px;
+    height: 40px;
+    top: 30%;
+  }
+  .slider {
+    margin-left: 90px;
+    margin-bottom: 80px;
+  }
+  .thriangle {
+    top: 50px;
+    left: 60px;
+  }
+  .christ {
+    top: 20px;
+  }
 }
