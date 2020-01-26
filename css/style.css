@@ -77,7 +77,7 @@ body {
 .slider__item {
   margin-left: 30px;
   outline: none;
-  
+  cursor: grab;
   position: relative;
 }
 .hover-slide {
